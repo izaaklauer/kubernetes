@@ -166,7 +166,7 @@ type Attacher interface {
 
 	// VolumesAreAttached checks whether the list of volumes still attached to the specified
 	// node. It returns a map which maps from the volume spec to the checking result.
-	// If an error is occurred during checking, the error will be returned
+	// If an error has occurred during checking, the error will be returned
 	VolumesAreAttached(specs []*Spec, nodeName types.NodeName) (map[*Spec]bool, error)
 
 	// WaitForAttach blocks until the device is attached to this
